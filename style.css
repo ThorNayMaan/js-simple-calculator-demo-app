@@ -1,0 +1,131 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.zero {
+    grid-area: zero;
+}
+.clear {
+    grid-area: clear;
+}
+.backspace {
+    grid-area: backspace;
+}
+.division {
+    grid-area: division;
+}
+.multiplication {
+    grid-area: multiplication;
+}
+.plus {
+    grid-area: plus;
+}
+.minus {
+    grid-area: minus;
+}
+.equal {
+    grid-area: equal;
+}
+.input-num {
+    grid-area: input-num;
+}
+
+.cal-body {
+    display: grid;
+    grid-template-areas:
+        'input-num    input-num    input-num    input-num'
+        'clear      clear    backspace  division'
+        'seven      eight   nine    multiplication'
+        'four   five    six     plus'
+        'one    two     three   minus'
+        'zero   zero    zero    equal';
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    font-size: 30px;
+    border: none;
+    row-gap: 2px;
+    column-gap: 2px;
+    background-color: #292929;
+    position: relative;
+}
+
+.cal-body > * {
+    background-color: lemonchiffon;
+    cursor: pointer;
+    border: none;
+}
+
+.cal-body > *:hover {
+    background: white;
+}
+
+.input-num {
+    padding: 5px 15px;
+    /* To be in within width: otherwise will be go outside of the box */
+    width: 400px;
+    background: #292929;
+    color: white;
+    border: none;
+    cursor: text;
+    text-align: right;
+}
+
+.input-num:hover {
+    background: #292929;
+}
+
+.input-num:focus {
+    outline: none;
+}
+
+.input-info {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    background-color: transparent;
+    font-size: 13px;
+    color: silver;
+    font-style: italic;
+}
+
+.side-color {
+    background-color: coral;
+    color: white;
+}
+
+.side-color:hover {
+    background-color: coral;
+    color: #292929;
+}
